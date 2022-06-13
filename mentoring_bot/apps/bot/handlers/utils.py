@@ -3,6 +3,7 @@ import datetime
 from aiogram.utils import markdown
 
 from mentoring_bot.apps.bot.markups.common import common_markups
+from mentoring_bot.config.config import TZ
 from mentoring_bot.loader import bot, scheduler
 
 url1 = markdown.hlink("Смотреть видео-уроки", "https://lk.soultip.online/")
@@ -34,10 +35,9 @@ async def send_deferred_message(user_id):
 
 async def create_deferred_message(user_id):
     """Создание отложенного сообщения"""
-    new_date = datetime.datetime.now() + datetime.timedelta(
+    new_date = datetime.datetime.now(TZ) + datetime.timedelta(
         hours=2,
         # seconds=10
-
     )
     scheduler.add_job(send_deferred_message,
                       "date",
@@ -52,7 +52,7 @@ async def send_evaluation_message(user_id):
 
 async def create_evaluation_message(user_id):
     """Создание отложенного сообщения"""
-    new_date = datetime.datetime.now() + datetime.timedelta(
+    new_date = datetime.datetime.now(TZ) + datetime.timedelta(
         minutes=15,
         # seconds=10
     )
