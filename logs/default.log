@@ -1,0 +1,837 @@
+ERROR [2022-05-23 18:58:31,962] asyncio: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x1100d9bd0>
+ERROR [2022-05-23 19:01:02,524] asyncio: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x10dcdb280>
+ERROR [2022-05-23 19:04:09,709] asyncio: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x10f4ff160>
+ERROR [2022-05-23 19:08:00,276] asyncio: Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x10f8830d0>
+INFO [2022-05-23 19:10:46,662] apscheduler.scheduler: Scheduler started
+INFO [2022-05-23 19:10:46,664] aiogram.dispatcher: Start poling
+INFO [2022-05-23 19:10:46,728] aiogram.dispatcher: Run polling for bot @MyTgControllerBot id=5238593606 - 'MyTgControllerBot'
+INFO [2022-05-23 19:11:13,431] apscheduler.scheduler: Added job "send_deferred_message" to job store "default"
+INFO [2022-05-23 19:11:13,861] aiogram.event: Update id=688054784 is handled. Duration 516 ms by bot id=5238593606
+INFO [2022-05-23 19:12:21,378] apscheduler.scheduler: Added job "send_deferred_message" to job store "default"
+INFO [2022-05-23 19:12:21,614] aiogram.event: Update id=688054785 is handled. Duration 239 ms by bot id=5238593606
+INFO [2022-05-23 19:12:52,028] aiogram.event: Update id=688054786 is handled. Duration 252 ms by bot id=5238593606
+INFO [2022-05-23 19:12:53,377] aiogram.event: Update id=688054787 is handled. Duration 118 ms by bot id=5238593606
+INFO [2022-05-23 19:12:53,636] aiogram.event: Update id=688054788 is handled. Duration 283 ms by bot id=5238593606
+INFO [2022-05-23 19:12:55,661] aiogram.event: Update id=688054789 is handled. Duration 148 ms by bot id=5238593606
+INFO [2022-05-23 19:12:57,224] aiogram.event: Update id=688054790 is handled. Duration 172 ms by bot id=5238593606
+INFO [2022-05-23 19:13:00,320] aiogram.event: Update id=688054791 is handled. Duration 138 ms by bot id=5238593606
+INFO [2022-05-23 19:13:12,407] aiogram.event: Update id=688054792 is handled. Duration 207 ms by bot id=5238593606
+INFO [2022-05-23 19:13:14,596] aiogram.event: Update id=688054793 is handled. Duration 190 ms by bot id=5238593606
+INFO [2022-05-23 19:13:16,613] aiogram.event: Update id=688054794 is handled. Duration 143 ms by bot id=5238593606
+INFO [2022-05-23 19:13:18,239] aiogram.event: Update id=688054795 is handled. Duration 200 ms by bot id=5238593606
+INFO [2022-05-23 19:13:20,242] aiogram.event: Update id=688054796 is handled. Duration 267 ms by bot id=5238593606
+INFO [2022-05-23 19:13:26,606] aiogram.event: Update id=688054797 is handled. Duration 185 ms by bot id=5238593606
+INFO [2022-05-23 19:13:30,025] aiogram.event: Update id=688054798 is handled. Duration 125 ms by bot id=5238593606
+INFO [2022-05-23 19:16:23,447] aiogram.event: Update id=688054799 is handled. Duration 533 ms by bot id=5238593606
+INFO [2022-05-23 19:17:11,126] aiogram.dispatcher: Polling stopped
+INFO [2022-05-23 19:17:12,597] apscheduler.scheduler: Scheduler started
+INFO [2022-05-23 19:17:12,598] aiogram.dispatcher: Start poling
+INFO [2022-05-23 19:17:12,680] aiogram.dispatcher: Run polling for bot @MyTgControllerBot id=5238593606 - 'MyTgControllerBot'
+INFO [2022-05-23 19:17:16,020] aiogram.event: Update id=688054801 is handled. Duration 239 ms by bot id=5238593606
+INFO [2022-05-23 19:17:16,126] aiogram.event: Update id=688054800 is handled. Duration 1391 ms by bot id=5238593606
+INFO [2022-05-23 19:17:17,494] aiogram.event: Update id=688054802 is handled. Duration 119 ms by bot id=5238593606
+INFO [2022-05-23 19:17:18,497] aiogram.event: Update id=688054803 is handled. Duration 150 ms by bot id=5238593606
+ERROR [2022-05-23 19:17:19,317] root: 1 validation error for EditMessageReplyMarkup
+reply_markup -> inline_keyboard
+  field required (type=value_error.missing)
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 35, in menu
+    await call.message.edit_reply_markup(common_markups.menu())
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/types/message.py", line 1823, in edit_reply_markup
+    return EditMessageReplyMarkup(
+  File "pydantic/main.py", line 341, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 1 validation error for EditMessageReplyMarkup
+reply_markup -> inline_keyboard
+  field required (type=value_error.missing)
+INFO [2022-05-23 19:17:19,324] aiogram.event: Update id=688054804 is handled. Duration 12 ms by bot id=5238593606
+INFO [2022-05-23 19:18:04,101] aiogram.dispatcher: Polling stopped
+INFO [2022-05-23 19:18:05,668] apscheduler.scheduler: Scheduler started
+INFO [2022-05-23 19:18:05,669] aiogram.dispatcher: Start poling
+INFO [2022-05-23 19:18:05,761] aiogram.dispatcher: Run polling for bot @MyTgControllerBot id=5238593606 - 'MyTgControllerBot'
+INFO [2022-05-23 19:18:07,233] aiogram.event: Update id=688054805 is handled. Duration 445 ms by bot id=5238593606
+INFO [2022-05-23 19:18:20,205] aiogram.event: Update id=688054806 is handled. Duration 252 ms by bot id=5238593606
+INFO [2022-05-23 19:18:21,477] aiogram.event: Update id=688054807 is handled. Duration 202 ms by bot id=5238593606
+INFO [2022-05-23 19:18:22,707] aiogram.event: Update id=688054808 is handled. Duration 221 ms by bot id=5238593606
+INFO [2022-05-23 19:18:23,253] aiogram.event: Update id=688054809 is handled. Duration 166 ms by bot id=5238593606
+INFO [2022-05-23 19:18:24,155] aiogram.event: Update id=688054810 is handled. Duration 216 ms by bot id=5238593606
+INFO [2022-05-23 19:18:37,671] aiogram.dispatcher: Polling stopped
+INFO [2022-05-23 19:18:38,986] apscheduler.scheduler: Scheduler started
+INFO [2022-05-23 19:18:38,987] aiogram.dispatcher: Start poling
+INFO [2022-05-23 19:18:39,049] aiogram.dispatcher: Run polling for bot @MyTgControllerBot id=5238593606 - 'MyTgControllerBot'
+INFO [2022-05-23 19:19:10,723] aiogram.event: Update id=688054811 is not handled. Duration 1 ms by bot id=5238593606
+INFO [2022-05-23 19:19:12,650] aiogram.event: Update id=688054812 is not handled. Duration 0 ms by bot id=5238593606
+INFO [2022-05-23 19:19:13,109] aiogram.event: Update id=688054813 is handled. Duration 250 ms by bot id=5238593606
+INFO [2022-05-23 19:19:15,757] aiogram.event: Update id=688054814 is handled. Duration 122 ms by bot id=5238593606
+INFO [2022-05-23 19:19:16,692] aiogram.event: Update id=688054815 is handled. Duration 118 ms by bot id=5238593606
+INFO [2022-05-23 19:19:17,564] aiogram.event: Update id=688054816 is handled. Duration 114 ms by bot id=5238593606
+INFO [2022-05-23 19:19:18,125] aiogram.event: Update id=688054817 is handled. Duration 140 ms by bot id=5238593606
+INFO [2022-05-23 19:19:18,821] aiogram.event: Update id=688054818 is handled. Duration 109 ms by bot id=5238593606
+INFO [2022-05-23 19:19:19,941] aiogram.event: Update id=688054819 is handled. Duration 120 ms by bot id=5238593606
+INFO [2022-05-23 19:19:21,218] aiogram.event: Update id=688054820 is handled. Duration 111 ms by bot id=5238593606
+INFO [2022-05-23 19:19:23,003] aiogram.event: Update id=688054821 is handled. Duration 127 ms by bot id=5238593606
+INFO [2022-05-23 19:19:33,078] aiogram.event: Update id=688054822 is not handled. Duration 0 ms by bot id=5238593606
+INFO [2022-05-23 19:19:34,852] aiogram.event: Update id=688054823 is not handled. Duration 0 ms by bot id=5238593606
+INFO [2022-05-23 19:19:35,446] aiogram.event: Update id=688054824 is handled. Duration 238 ms by bot id=5238593606
+INFO [2022-05-23 19:19:38,547] aiogram.event: Update id=688054825 is handled. Duration 133 ms by bot id=5238593606
+INFO [2022-05-23 19:19:40,759] aiogram.event: Update id=688054826 is handled. Duration 113 ms by bot id=5238593606
+INFO [2022-05-23 19:19:41,564] aiogram.event: Update id=688054827 is handled. Duration 156 ms by bot id=5238593606
+INFO [2022-05-23 19:19:42,570] aiogram.event: Update id=688054828 is handled. Duration 200 ms by bot id=5238593606
+INFO [2022-05-23 19:19:43,091] aiogram.event: Update id=688054829 is handled. Duration 164 ms by bot id=5238593606
+INFO [2022-05-23 19:19:43,323] aiogram.event: Update id=688054830 is handled. Duration 170 ms by bot id=5238593606
+INFO [2022-05-23 19:19:44,396] aiogram.event: Update id=688054831 is handled. Duration 177 ms by bot id=5238593606
+INFO [2022-05-23 19:19:47,964] aiogram.event: Update id=688054832 is handled. Duration 147 ms by bot id=5238593606
+INFO [2022-05-23 19:19:49,348] aiogram.event: Update id=688054833 is handled. Duration 154 ms by bot id=5238593606
+INFO [2022-05-23 19:19:50,690] aiogram.event: Update id=688054834 is handled. Duration 193 ms by bot id=5238593606
+INFO [2022-05-23 19:19:51,648] aiogram.event: Update id=688054835 is handled. Duration 173 ms by bot id=5238593606
+INFO [2022-05-23 19:19:52,861] aiogram.event: Update id=688054836 is handled. Duration 186 ms by bot id=5238593606
+INFO [2022-05-23 19:19:56,309] aiogram.event: Update id=688054837 is handled. Duration 159 ms by bot id=5238593606
+INFO [2022-05-23 19:24:57,545] aiogram.dispatcher: Polling stopped
+INFO [2022-05-23 19:27:25,869] apscheduler.scheduler: Scheduler started
+INFO [2022-05-23 19:27:25,870] aiogram.dispatcher: Start poling
+INFO [2022-05-23 19:27:25,937] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'mentoringchatbot'
+INFO [2022-05-23 19:27:36,177] aiogram.event: Update id=670128176 is handled. Duration 439 ms by bot id=5355436050
+ERROR [2022-05-23 19:27:40,788] root: Bad Request: wrong file identifier/HTTP URL specified
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 43, in schedule
+    await message.answer_document(file_ids[program])
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 153, in make_request
+    response = self.check_response(method=method, status_code=resp.status, content=raw_result)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 86, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Bad Request: wrong file identifier/HTTP URL specified
+INFO [2022-05-23 19:27:40,800] aiogram.event: Update id=670128177 is handled. Duration 202 ms by bot id=5355436050
+INFO [2022-05-23 19:27:53,506] aiogram.event: Update id=670128178 is handled. Duration 220 ms by bot id=5355436050
+ERROR [2022-05-23 19:27:55,027] root: Bad Request: wrong file identifier/HTTP URL specified
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 43, in schedule
+    await message.answer_document(file_ids[program])
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 153, in make_request
+    response = self.check_response(method=method, status_code=resp.status, content=raw_result)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 86, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Bad Request: wrong file identifier/HTTP URL specified
+INFO [2022-05-23 19:27:55,028] aiogram.event: Update id=670128179 is handled. Duration 101 ms by bot id=5355436050
+INFO [2022-05-23 19:27:57,519] aiogram.event: Update id=670128180 is handled. Duration 222 ms by bot id=5355436050
+INFO [2022-05-23 19:27:58,396] aiogram.event: Update id=670128181 is handled. Duration 163 ms by bot id=5355436050
+INFO [2022-05-23 19:28:00,400] aiogram.event: Update id=670128182 is handled. Duration 264 ms by bot id=5355436050
+ERROR [2022-05-23 19:28:08,402] root: Bad Request: wrong file identifier/HTTP URL specified
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 43, in schedule
+    await message.answer_document(file_ids[program])
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 153, in make_request
+    response = self.check_response(method=method, status_code=resp.status, content=raw_result)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 86, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Bad Request: wrong file identifier/HTTP URL specified
+INFO [2022-05-23 19:28:08,403] aiogram.event: Update id=670128183 is handled. Duration 126 ms by bot id=5355436050
+ERROR [2022-05-23 19:28:22,702] root: Bad Request: wrong file identifier/HTTP URL specified
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 43, in schedule
+    await message.answer_document(file_ids[program])
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 153, in make_request
+    response = self.check_response(method=method, status_code=resp.status, content=raw_result)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 86, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Bad Request: wrong file identifier/HTTP URL specified
+INFO [2022-05-23 19:28:22,704] aiogram.event: Update id=670128184 is handled. Duration 138 ms by bot id=5355436050
+INFO [2022-05-23 19:34:00,332] aiogram.dispatcher: Polling stopped
+INFO [2022-05-23 19:34:01,592] apscheduler.scheduler: Scheduler started
+INFO [2022-05-23 19:34:01,593] aiogram.dispatcher: Start poling
+INFO [2022-05-23 19:34:01,660] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'mentoringchatbot'
+INFO [2022-05-23 19:34:13,310] aiogram.event: Update id=670128185 is handled. Duration 460 ms by bot id=5355436050
+INFO [2022-05-23 19:34:14,515] aiogram.event: Update id=670128186 is handled. Duration 166 ms by bot id=5355436050
+INFO [2022-05-23 19:34:15,131] aiogram.event: Update id=670128187 is handled. Duration 154 ms by bot id=5355436050
+INFO [2022-05-23 19:34:17,801] aiogram.event: Update id=670128188 is handled. Duration 2323 ms by bot id=5355436050
+INFO [2022-05-23 19:34:18,700] aiogram.event: Update id=670128189 is handled. Duration 182 ms by bot id=5355436050
+INFO [2022-05-23 19:34:19,496] aiogram.event: Update id=670128190 is handled. Duration 260 ms by bot id=5355436050
+INFO [2022-05-23 19:34:57,427] aiogram.event: Update id=670128191 is handled. Duration 336 ms by bot id=5355436050
+INFO [2022-05-23 19:35:12,506] aiogram.event: Update id=670128192 is handled. Duration 125 ms by bot id=5355436050
+INFO [2022-05-23 19:41:04,566] aiogram.dispatcher: Polling stopped
+INFO [2022-05-23 21:34:35,395] apscheduler.scheduler: Scheduler started
+INFO [2022-05-23 21:34:35,397] aiogram.dispatcher: Start poling
+INFO [2022-05-23 21:34:35,459] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'mentoringchatbot'
+INFO [2022-05-23 21:34:35,533] aiogram.event: Update id=670128200 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-05-23 21:34:35,534] aiogram.event: Update id=670128201 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-05-23 21:34:35,534] aiogram.event: Update id=670128203 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-05-23 21:34:35,534] aiogram.event: Update id=670128204 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-05-23 21:34:35,547] aiogram.event: Update id=670128207 is not handled. Duration 11 ms by bot id=5355436050
+INFO [2022-05-23 21:34:35,659] aiogram.event: Update id=670128210 is not handled. Duration 0 ms by bot id=5355436050
+ERROR [2022-05-23 21:34:35,935] root: Forbidden: bot was blocked by the user
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 26, in start
+    await message.answer(_("Добро пожаловать в онлайн-школу дизайна Семена Романюка! "
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 153, in make_request
+    response = self.check_response(method=method, status_code=resp.status, content=raw_result)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 94, in check_response
+    raise TelegramForbiddenError(method=method, message=description)
+aiogram.exceptions.TelegramForbiddenError: Forbidden: bot was blocked by the user
+INFO [2022-05-23 21:34:35,942] aiogram.event: Update id=670128202 is handled. Duration 407 ms by bot id=5355436050
+INFO [2022-05-23 21:34:35,992] aiogram.event: Update id=670128196 is handled. Duration 460 ms by bot id=5355436050
+INFO [2022-05-23 21:34:36,021] aiogram.event: Update id=670128198 is handled. Duration 488 ms by bot id=5355436050
+INFO [2022-05-23 21:34:36,056] aiogram.event: Update id=670128197 is handled. Duration 523 ms by bot id=5355436050
+INFO [2022-05-23 21:34:36,075] aiogram.event: Update id=670128194 is handled. Duration 543 ms by bot id=5355436050
+ERROR [2022-05-23 21:34:36,104] root: Forbidden: bot was blocked by the user
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 26, in start
+    await message.answer(_("Добро пожаловать в онлайн-школу дизайна Семена Романюка! "
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 153, in make_request
+    response = self.check_response(method=method, status_code=resp.status, content=raw_result)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 94, in check_response
+    raise TelegramForbiddenError(method=method, message=description)
+aiogram.exceptions.TelegramForbiddenError: Forbidden: bot was blocked by the user
+INFO [2022-05-23 21:34:36,105] aiogram.event: Update id=670128206 is handled. Duration 570 ms by bot id=5355436050
+INFO [2022-05-23 21:34:36,114] aiogram.event: Update id=670128193 is handled. Duration 583 ms by bot id=5355436050
+INFO [2022-05-23 21:34:36,260] aiogram.event: Update id=670128199 is handled. Duration 727 ms by bot id=5355436050
+ERROR [2022-05-23 21:34:36,354] root: Forbidden: bot was blocked by the user
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 26, in start
+    await message.answer(_("Добро пожаловать в онлайн-школу дизайна Семена Романюка! "
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 153, in make_request
+    response = self.check_response(method=method, status_code=resp.status, content=raw_result)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 94, in check_response
+    raise TelegramForbiddenError(method=method, message=description)
+aiogram.exceptions.TelegramForbiddenError: Forbidden: bot was blocked by the user
+INFO [2022-05-23 21:34:36,354] aiogram.event: Update id=670128208 is handled. Duration 819 ms by bot id=5355436050
+ERROR [2022-05-23 21:34:37,075] root: Forbidden: bot was blocked by the user
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 26, in start
+    await message.answer(_("Добро пожаловать в онлайн-школу дизайна Семена Романюка! "
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 153, in make_request
+    response = self.check_response(method=method, status_code=resp.status, content=raw_result)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 94, in check_response
+    raise TelegramForbiddenError(method=method, message=description)
+aiogram.exceptions.TelegramForbiddenError: Forbidden: bot was blocked by the user
+INFO [2022-05-23 21:34:37,076] aiogram.event: Update id=670128205 is handled. Duration 1541 ms by bot id=5355436050
+ERROR [2022-05-23 21:34:37,795] root: Forbidden: bot was blocked by the user
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 45, in schedule
+    message = await message.answer_document(FSInputFile(MEDIA_DIR / "Программа курса.pdf"))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 153, in make_request
+    response = self.check_response(method=method, status_code=resp.status, content=raw_result)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 94, in check_response
+    raise TelegramForbiddenError(method=method, message=description)
+aiogram.exceptions.TelegramForbiddenError: Forbidden: bot was blocked by the user
+INFO [2022-05-23 21:34:37,797] aiogram.event: Update id=670128209 is handled. Duration 2261 ms by bot id=5355436050
+INFO [2022-05-23 21:34:38,427] aiogram.event: Update id=670128211 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-05-23 21:34:38,831] aiogram.event: Update id=670128195 is handled. Duration 3299 ms by bot id=5355436050
+INFO [2022-05-23 21:34:39,182] aiogram.event: Update id=670128212 is handled. Duration 138 ms by bot id=5355436050
+INFO [2022-05-23 21:34:44,980] aiogram.event: Update id=670128213 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-05-23 21:35:01,791] aiogram.event: Update id=670128214 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-05-23 21:35:02,522] aiogram.event: Update id=670128215 is handled. Duration 230 ms by bot id=5355436050
+INFO [2022-05-23 21:50:20,934] aiogram.dispatcher: Polling stopped
+INFO [2022-05-23 22:16:28,217] apscheduler.scheduler: Scheduler started
+INFO [2022-05-23 22:16:28,219] aiogram.dispatcher: Start poling
+INFO [2022-05-23 22:16:28,283] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'mentoringchatbot'
+INFO [2022-05-23 22:17:13,163] aiogram.event: Update id=670128216 is handled. Duration 3503 ms by bot id=5355436050
+INFO [2022-05-23 22:17:21,650] aiogram.event: Update id=670128217 is handled. Duration 126 ms by bot id=5355436050
+INFO [2022-05-23 22:17:29,256] aiogram.event: Update id=670128218 is handled. Duration 198 ms by bot id=5355436050
+INFO [2022-05-23 22:17:31,617] aiogram.event: Update id=670128219 is handled. Duration 103 ms by bot id=5355436050
+INFO [2022-05-23 22:17:39,872] aiogram.event: Update id=670128220 is handled. Duration 286 ms by bot id=5355436050
+INFO [2022-05-23 22:17:48,505] aiogram.event: Update id=670128221 is handled. Duration 134 ms by bot id=5355436050
+INFO [2022-05-23 22:18:00,713] aiogram.event: Update id=670128222 is handled. Duration 140 ms by bot id=5355436050
+INFO [2022-05-23 22:18:04,799] aiogram.event: Update id=670128223 is handled. Duration 122 ms by bot id=5355436050
+INFO [2022-05-23 22:18:08,989] aiogram.event: Update id=670128224 is handled. Duration 215 ms by bot id=5355436050
+INFO [2022-05-23 22:18:44,523] aiogram.dispatcher: Polling stopped
+INFO [2022-06-05 18:29:22,172] apscheduler.scheduler: Scheduler started
+INFO [2022-06-05 18:29:22,174] aiogram.dispatcher: Start poling
+INFO [2022-06-05 18:29:22,219] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'mentoringchatbot'
+INFO [2022-06-05 18:29:22,268] aiogram.event: Update id=670128254 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-06-05 18:29:22,269] aiogram.event: Update id=670128255 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-06-05 18:29:22,270] aiogram.event: Update id=670128259 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-06-05 18:29:22,270] aiogram.event: Update id=670128260 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-06-05 18:29:22,271] aiogram.event: Update id=670128262 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-06-05 18:29:22,271] aiogram.event: Update id=670128263 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-06-05 18:29:22,483] aiogram.event: Update id=670128258 is handled. Duration 213 ms by bot id=5355436050
+INFO [2022-06-05 18:29:22,552] aiogram.event: Update id=670128253 is handled. Duration 284 ms by bot id=5355436050
+INFO [2022-06-05 18:29:22,573] aiogram.event: Update id=670128256 is handled. Duration 303 ms by bot id=5355436050
+INFO [2022-06-05 18:29:22,603] aiogram.event: Update id=670128257 is handled. Duration 333 ms by bot id=5355436050
+INFO [2022-06-05 18:29:22,632] aiogram.event: Update id=670128261 is handled. Duration 361 ms by bot id=5355436050
+INFO [2022-06-05 18:29:22,655] aiogram.event: Update id=670128264 is handled. Duration 383 ms by bot id=5355436050
+INFO [2022-06-05 18:29:34,684] aiogram.event: Update id=670128265 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-06-05 18:32:46,132] aiogram.event: Update id=670128266 is not handled. Duration 1 ms by bot id=5355436050
+INFO [2022-06-05 18:32:46,504] aiogram.event: Update id=670128267 is handled. Duration 274 ms by bot id=5355436050
+INFO [2022-06-05 18:32:54,300] aiogram.event: Update id=670128268 is handled. Duration 80 ms by bot id=5355436050
+INFO [2022-06-05 18:36:16,423] aiogram.dispatcher: Polling stopped
+INFO [2022-06-05 18:43:11,746] apscheduler.scheduler: Scheduler started
+INFO [2022-06-05 18:43:11,748] aiogram.dispatcher: Start poling
+INFO [2022-06-05 18:43:11,791] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'romanyukschool_bot'
+INFO [2022-06-05 18:43:17,848] aiogram.event: Update id=670128269 is handled. Duration 214 ms by bot id=5355436050
+INFO [2022-06-05 18:43:20,502] aiogram.event: Update id=670128270 is handled. Duration 112 ms by bot id=5355436050
+INFO [2022-06-05 18:43:34,267] aiogram.event: Update id=670128271 is handled. Duration 154 ms by bot id=5355436050
+INFO [2022-06-05 18:44:36,153] aiogram.dispatcher: Polling stopped
+INFO [2022-06-05 18:44:41,402] apscheduler.scheduler: Scheduler started
+INFO [2022-06-05 18:44:41,403] aiogram.dispatcher: Start poling
+INFO [2022-06-05 18:44:41,447] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'romanyukschool_bot'
+INFO [2022-06-05 18:44:48,767] aiogram.event: Update id=670128272 is handled. Duration 2968 ms by bot id=5355436050
+INFO [2022-06-05 18:44:51,293] aiogram.event: Update id=670128273 is handled. Duration 172 ms by bot id=5355436050
+INFO [2022-06-05 18:45:24,683] aiogram.event: Update id=670128274 is handled. Duration 181 ms by bot id=5355436050
+INFO [2022-06-05 18:45:30,240] aiogram.dispatcher: Polling stopped
+INFO [2022-06-05 18:45:34,384] apscheduler.scheduler: Scheduler started
+INFO [2022-06-05 18:45:34,386] aiogram.dispatcher: Start poling
+INFO [2022-06-05 18:45:34,438] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'romanyukschool_bot'
+INFO [2022-06-05 18:45:39,659] aiogram.event: Update id=670128275 is handled. Duration 302 ms by bot id=5355436050
+INFO [2022-06-05 18:46:34,166] aiogram.dispatcher: Polling stopped
+INFO [2022-06-05 18:47:05,368] apscheduler.scheduler: Scheduler started
+INFO [2022-06-05 18:47:05,369] aiogram.dispatcher: Start poling
+INFO [2022-06-05 18:47:05,418] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'romanyukschool_bot'
+INFO [2022-06-05 18:47:12,026] aiogram.event: Update id=670128276 is handled. Duration 3082 ms by bot id=5355436050
+INFO [2022-06-05 18:47:12,789] aiogram.event: Update id=670128277 is handled. Duration 84 ms by bot id=5355436050
+INFO [2022-06-05 18:49:00,963] aiogram.dispatcher: Polling stopped
+INFO [2022-06-05 18:49:07,015] apscheduler.scheduler: Scheduler started
+INFO [2022-06-05 18:49:07,016] aiogram.dispatcher: Start poling
+INFO [2022-06-05 18:49:07,065] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'romanyukschool_bot'
+INFO [2022-06-05 18:49:10,385] aiogram.event: Update id=670128278 is handled. Duration 187 ms by bot id=5355436050
+INFO [2022-06-05 18:49:44,939] aiogram.event: Update id=670128279 is handled. Duration 239 ms by bot id=5355436050
+INFO [2022-06-05 18:50:51,496] aiogram.event: Update id=670128280 is handled. Duration 236 ms by bot id=5355436050
+INFO [2022-06-05 18:51:01,685] aiogram.event: Update id=670128281 is handled. Duration 142 ms by bot id=5355436050
+INFO [2022-06-05 18:51:15,940] aiogram.event: Update id=670128282 is not handled. Duration 2 ms by bot id=5355436050
+INFO [2022-06-05 18:51:21,123] aiogram.event: Update id=670128283 is handled. Duration 335 ms by bot id=5355436050
+INFO [2022-06-05 18:52:22,856] aiogram.dispatcher: Polling stopped
+INFO [2022-06-05 18:52:24,805] apscheduler.scheduler: Scheduler started
+INFO [2022-06-05 18:52:24,807] aiogram.dispatcher: Start poling
+INFO [2022-06-05 18:52:24,853] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'romanyukschool_bot'
+INFO [2022-06-05 18:52:30,472] aiogram.event: Update id=670128284 is handled. Duration 3462 ms by bot id=5355436050
+INFO [2022-06-05 18:54:53,899] aiogram.dispatcher: Polling stopped
+INFO [2022-06-05 18:57:58,855] apscheduler.scheduler: Scheduler started
+INFO [2022-06-05 18:57:58,857] aiogram.dispatcher: Start poling
+INFO [2022-06-05 18:57:58,903] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'romanyukschool_bot'
+INFO [2022-06-05 18:58:05,331] aiogram.event: Update id=670128285 is handled. Duration 3237 ms by bot id=5355436050
+INFO [2022-06-05 19:01:56,663] aiogram.dispatcher: Polling stopped
+INFO [2022-06-05 19:02:29,529] apscheduler.scheduler: Scheduler started
+INFO [2022-06-05 19:02:29,530] aiogram.dispatcher: Start poling
+INFO [2022-06-05 19:02:29,579] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'romanyukschool_bot'
+INFO [2022-06-05 19:02:34,947] aiogram.event: Update id=670128286 is handled. Duration 187 ms by bot id=5355436050
+INFO [2022-06-05 19:02:46,630] aiogram.event: Update id=670128287 is handled. Duration 8632 ms by bot id=5355436050
+INFO [2022-06-05 19:03:10,973] aiogram.dispatcher: Polling stopped
+INFO [2022-06-05 19:03:27,100] apscheduler.scheduler: Scheduler started
+INFO [2022-06-05 19:03:27,101] aiogram.dispatcher: Start poling
+INFO [2022-06-05 19:03:27,148] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'romanyukschool_bot'
+INFO [2022-06-05 19:03:37,827] aiogram.event: Update id=670128288 is handled. Duration 6543 ms by bot id=5355436050
+INFO [2022-06-05 19:03:44,618] aiogram.dispatcher: Polling stopped
+INFO [2022-06-05 19:12:47,008] apscheduler.scheduler: Scheduler started
+INFO [2022-06-05 19:12:47,009] aiogram.dispatcher: Start poling
+INFO [2022-06-05 19:12:47,058] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'romanyukschool_bot'
+INFO [2022-06-05 19:12:57,457] aiogram.event: Update id=670128289 is handled. Duration 204 ms by bot id=5355436050
+INFO [2022-06-05 19:13:07,897] aiogram.event: Update id=670128290 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-06-05 19:13:28,068] aiogram.event: Update id=670128291 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-06-05 19:13:28,391] aiogram.event: Update id=670128292 is handled. Duration 207 ms by bot id=5355436050
+INFO [2022-06-05 19:13:34,820] aiogram.event: Update id=670128293 is handled. Duration 97 ms by bot id=5355436050
+INFO [2022-06-05 19:13:38,694] aiogram.event: Update id=670128294 is handled. Duration 80 ms by bot id=5355436050
+INFO [2022-06-05 19:13:45,695] aiogram.event: Update id=670128295 is handled. Duration 116 ms by bot id=5355436050
+INFO [2022-06-05 19:13:53,257] aiogram.event: Update id=670128296 is handled. Duration 3276 ms by bot id=5355436050
+INFO [2022-06-05 19:13:57,436] aiogram.event: Update id=670128297 is handled. Duration 82 ms by bot id=5355436050
+INFO [2022-06-05 19:18:57,076] aiogram.dispatcher: Polling stopped
+INFO [2022-06-13 18:58:18,125] apscheduler.scheduler: Scheduler started
+INFO [2022-06-13 18:58:18,127] aiogram.dispatcher: Start poling
+INFO [2022-06-13 18:58:18,187] aiogram.dispatcher: Run polling for bot @mentoringschool_bot id=5355436050 - 'Онлайн-школа веб-дизайна Семена Романюка'
+INFO [2022-06-13 18:58:18,249] aiogram.event: Update id=670128303 is not handled. Duration 1 ms by bot id=5355436050
+INFO [2022-06-13 18:58:18,249] aiogram.event: Update id=670128304 is not handled. Duration 0 ms by bot id=5355436050
+INFO [2022-06-13 18:58:18,361] apscheduler.scheduler: Added job "send_deferred_message" to job store "default"
+INFO [2022-06-13 18:58:47,558] aiogram.event: Update id=670128308 is handled. Duration 404 ms by bot id=5355436050
+INFO [2022-06-13 18:58:49,096] aiogram.event: Update id=670128309 is handled. Duration 96 ms by bot id=5355436050
+INFO [2022-06-13 18:58:52,329] aiogram.event: Update id=670128310 is handled. Duration 154 ms by bot id=5355436050
+INFO [2022-06-13 18:58:55,365] aiogram.event: Update id=670128311 is handled. Duration 2384 ms by bot id=5355436050
+ERROR [2022-06-13 18:59:19,218] root: Request timeout error
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 145, in make_request
+    async with session.post(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiohttp/client.py", line 466, in _request
+    with timer:
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiohttp/helpers.py", line 721, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 26, in start
+    await message.answer(_("Добро пожаловать в онлайн-школу дизайна Семена Романюка! "
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 150, in make_request
+    raise TelegramNetworkError(method=method, message="Request timeout error")
+aiogram.exceptions.TelegramNetworkError: Request timeout error
+INFO [2022-06-13 18:59:19,228] aiogram.event: Update id=670128307 is handled. Duration 60978 ms by bot id=5355436050
+ERROR [2022-06-13 18:59:19,229] root: Request timeout error
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 145, in make_request
+    async with session.post(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiohttp/client.py", line 466, in _request
+    with timer:
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiohttp/helpers.py", line 721, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 26, in start
+    await message.answer(_("Добро пожаловать в онлайн-школу дизайна Семена Романюка! "
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 150, in make_request
+    raise TelegramNetworkError(method=method, message="Request timeout error")
+aiogram.exceptions.TelegramNetworkError: Request timeout error
+INFO [2022-06-13 18:59:19,230] aiogram.event: Update id=670128306 is handled. Duration 60980 ms by bot id=5355436050
+ERROR [2022-06-13 18:59:19,230] root: Request timeout error
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 145, in make_request
+    async with session.post(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiohttp/client.py", line 1138, in __aenter__
+    self._resp = await self._coro
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiohttp/client.py", line 466, in _request
+    with timer:
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiohttp/helpers.py", line 721, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 24, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 23, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/fsm/middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 244, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 145, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 129, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 125, in _wrapped
+    return await self._propagate_event(
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 138, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 212, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/mentoring_bot/apps/bot/handlers/common/common_menu.py", line 26, in start
+    await message.answer(_("Добро пожаловать в онлайн-школу дизайна Семена Романюка! "
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/methods/base.py", line 85, in emit
+    return await bot(self)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/bot.py", line 348, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/base.py", line 168, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/ekaterinakriger/PycharmProjects/pythonProject/venv/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 150, in make_request
+    raise TelegramNetworkError(method=method, message="Request timeout error")
+aiogram.exceptions.TelegramNetworkError: Request timeout error
+INFO [2022-06-13 18:59:19,231] aiogram.event: Update id=670128305 is handled. Duration 60981 ms by bot id=5355436050
+INFO [2022-06-13 19:00:22,676] aiogram.dispatcher: Polling stopped

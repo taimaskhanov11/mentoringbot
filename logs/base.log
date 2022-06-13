@@ -1,0 +1,43 @@
+2022-05-23 19:10:46.565 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-05-23 19:10:46.661 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-05-23 19:11:13.363 | INFO     | mentoring_bot.apps.bot.filters.base_filters:__call__:23 - Новый пользователь user=<User: 1>
+2022-05-23 19:12:21.378 | INFO     | mentoring_bot.apps.bot.filters.base_filters:__call__:23 - Новый пользователь user=<User: 2>
+2022-05-23 19:17:12.552 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-05-23 19:17:12.596 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-05-23 19:18:05.631 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-05-23 19:18:05.667 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-05-23 19:18:38.944 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-05-23 19:18:38.984 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-05-23 19:27:25.824 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-05-23 19:27:25.867 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-05-23 19:34:01.549 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-05-23 19:34:01.590 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-05-23 21:34:35.327 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-05-23 21:34:35.394 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-05-23 22:16:28.123 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-05-23 22:16:28.216 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-05 18:29:22.080 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-05 18:29:22.171 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-05 18:43:11.694 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-05 18:43:11.745 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-05 18:44:41.343 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-05 18:44:41.401 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-05 18:45:34.319 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-05 18:45:34.383 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-05 18:47:05.307 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-05 18:47:05.366 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-05 18:49:06.952 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-05 18:49:07.013 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-05 18:52:24.740 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-05 18:52:24.804 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-05 18:57:58.789 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-05 18:57:58.854 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-05 19:02:29.478 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-05 19:02:29.528 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-05 19:03:27.042 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-05 19:03:27.099 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-05 19:12:46.936 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-05 19:12:47.006 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-13 18:58:18.020 | DEBUG    | mentoring_bot.db:init_db:16 - Инициализация BD localhost
+2022-06-13 18:58:18.124 | DEBUG    | mentoring_bot.db:init_db:30 - База данных mentoring_bot инициализирована
+2022-06-13 18:58:18.323 | INFO     | mentoring_bot.apps.bot.filters.base_filters:__call__:23 - Новый пользователь user=<User: 3>
