@@ -3,6 +3,8 @@ import logging
 
 from aiogram import Bot
 from aiogram.types import BotCommand
+
+from mentoring_bot.apps.bot.handlers.admin.admin_menu import register_admin
 from mentoring_bot.apps.bot.handlers.common import register_common
 from mentoring_bot.apps.bot.handlers.errors.errors_handlers import register_error
 from mentoring_bot.config.config import config
@@ -15,7 +17,8 @@ import ssl
 
 async def set_commands(bot: Bot):
     commands = [
-        BotCommand(command="/start", description="Главное меню")
+        BotCommand(command="/start", description="Главное меню"),
+        BotCommand(command="/admin", description="Админ меню")
     ]
     await bot.set_my_commands(commands)
 
@@ -41,7 +44,7 @@ async def start():
     await init_db(**config.db.dict())
     scheduler.start()
     # Меню админа
-
+    register_admin(dp)
     # Регистрация хэндлеров
     register_common(dp)
     register_error(dp)

@@ -5,3 +5,7 @@ from aiogram.dispatcher.filters.callback_data import CallbackData
 class UserCallback(CallbackData, prefix="user"):
     pk: int
     action: str
+
+
+class EvaluationCallback(CallbackData, prefix="evaluation"):
+    point: int

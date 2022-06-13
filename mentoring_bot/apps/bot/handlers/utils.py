@@ -22,17 +22,41 @@ deferred_text = (
     "Код доступа: pQihh9"
 )
 
+evaluation_message = (
+    "Оцените работу нашего чат-бота 🤖 "
+)
+
 
 async def send_deferred_message(user_id):
     """Отправка отложенного сообщения"""
     await bot.send_message(user_id, deferred_text, "html", reply_markup=common_markups.deferred_message())
 
 
-
 async def create_deferred_message(user_id):
     """Создание отложенного сообщения"""
-    new_date = datetime.datetime.now() + datetime.timedelta(hours=2)
+    new_date = datetime.datetime.now() + datetime.timedelta(
+        hours=2,
+        # seconds=10
+
+    )
     scheduler.add_job(send_deferred_message,
+                      "date",
+                      run_date=new_date,
+                      args=[user_id])
+
+
+async def send_evaluation_message(user_id):
+    """Отправка отложенного сообщения"""
+    await bot.send_message(user_id, evaluation_message, "html", reply_markup=common_markups.evaluation_message())
+
+
+async def create_evaluation_message(user_id):
+    """Создание отложенного сообщения"""
+    new_date = datetime.datetime.now() + datetime.timedelta(
+        minutes=15,
+        # seconds=10
+    )
+    scheduler.add_job(send_evaluation_message,
                       "date",
                       run_date=new_date,
                       args=[user_id])

@@ -1,3 +1,6 @@
+from aiogram.utils.keyboard import InlineKeyboardBuilder
+
+from mentoring_bot.apps.bot.callback_data.base_callback import EvaluationCallback
 from mentoring_bot.apps.bot.markups.utils import get_inline_keyboard, get_reply_keyboard, get_as_column, \
     get_inline_url_keyboard, get_inline_button
 from mentoring_bot.loader import _
@@ -73,3 +76,14 @@ def deferred_message():
         [get_inline_button(("⬅️Назад", "menu"))]
     )
     return keyboard
+
+
+def evaluation_message():
+    builder = InlineKeyboardBuilder()
+    keyboard = list(range(1, 6))
+    keyboard[0] = f"{keyboard[0]}💔"
+    keyboard[4] = f"{keyboard[4]}❤️"
+    for num, i in enumerate(keyboard, 1):
+        builder.button(text=str(i), callback_data=EvaluationCallback(point=num))
+    builder.adjust(5)
+    return builder.as_markup()

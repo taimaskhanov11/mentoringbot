@@ -1,15 +1,15 @@
-import datetime
-
 from aiogram import Dispatcher, Router, types, F
 from aiogram.dispatcher.fsm.context import FSMContext
 from aiogram.types import FSInputFile
 
+from mentoring_bot.apps.bot.callback_data.base_callback import EvaluationCallback
 from mentoring_bot.apps.bot.filters.base_filters import UserFilter
 from mentoring_bot.apps.bot.handlers.temp import file_ids
-from mentoring_bot.apps.bot.handlers.utils import create_deferred_message
+from mentoring_bot.apps.bot.handlers.utils import create_deferred_message, create_evaluation_message
 from mentoring_bot.apps.bot.markups.common import common_markups
 from mentoring_bot.config.config import MEDIA_DIR
-from mentoring_bot.loader import _, scheduler
+from mentoring_bot.db.models import User, Evaluation
+from mentoring_bot.loader import _
 
 router = Router()
 
@@ -22,7 +22,7 @@ async def start(message: types.Message | types.CallbackQuery, new_user: bool, st
     if new_user:
         # создание отложенного сообщения для новых пользователей
         await create_deferred_message(message.from_user.id)
-
+        await create_evaluation_message(message.from_user.id)
 
     await message.answer(_("Добро пожаловать в онлайн-школу дизайна Семена Романюка! "
                            "Мы рады приветствовать вас на нашем курсе по UI/UX дизайну. "
@@ -33,7 +33,7 @@ async def start(message: types.Message | types.CallbackQuery, new_user: bool, st
 
 async def menu(call: types.CallbackQuery, state: FSMContext):
     await state.clear()
-    #await call.message.edit_reply_markup(common_markups.menu())
+    # await call.message.edit_reply_markup(common_markups.menu())
     await call.message.answer(_("Главное меню"), reply_markup=common_markups.menu())
 
 
@@ -68,12 +68,13 @@ async def news(message: types.Message):
 
 async def teacher(message: types.Message):
     """Связаться с преподавателем"""
-    await message.answer("Вы можете связаться с преподаваталем по ссылке, прикрепленной ниже.\n "
-                        "Рабочие часы преподавателя по ответам ученикам: "
+    await message.answer("Вы можете связаться с преподавателем по ссылке, прикрепленной ниже.\n "
+                         "Рабочие часы преподавателя по ответам ученикам:\n"
                          "ПН-ПТ с 12:00 до 18:00\n "
                          "СБ-ВСК – выходные дни\n "
                          "Связаться с преподавателем 👇\n "
-                        "https://t.me/soultip ")
+                         "https://t.me/soultip ")
+
 
 async def knowledge(message: types.Message):
     """Посмотреть базу знаний"""
@@ -83,6 +84,19 @@ async def knowledge(message: types.Message):
 async def lessons(message: types.Message):
     """Посмотреть уроки"""
     await message.answer("Какой модуль вас интересует?", reply_markup=common_markups.lessons())
+
+
+async def evaluation_process(call: types.CallbackQuery, user: User, callback_data: EvaluationCallback, state: FSMContext):
+    point = callback_data.point
+    await user.fetch_related("evaluation")
+    await call.message.delete()
+    if user.evaluation:
+        user.evaluation.point = point
+        await user.evaluation.save()
+        await call.message.answer("Оценка успешно обновлена")
+    else:
+        await Evaluation.create(user=user, point=point)
+        await call.message.answer("✅ Спасибо за обратную связь.")
 
 
 def register_common(dp: Dispatcher):
@@ -99,3 +113,4 @@ def register_common(dp: Dispatcher):
     message(teacher, F.text.lower() == "связаться с преподавателем")
     message(knowledge, F.text.lower() == "посмотреть базу знаний")
     message(lessons, F.text.lower() == "посмотреть уроки")
+    callback(evaluation_process, UserFilter(), EvaluationCallback.filter())

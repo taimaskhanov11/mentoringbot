@@ -12,7 +12,8 @@ class User(models.Model):
     first_name = fields.CharField(255, null=True)
     last_name = fields.CharField(255, null=True)
     language = fields.CharField(32, default="ru")
+    evaluation: "Evaluation"
 
 class Evaluation(models.Model):
     point = fields.IntField()
-    user = fields.OneToOneField("models.User")
+    user: User = fields.OneToOneField("models.User")
