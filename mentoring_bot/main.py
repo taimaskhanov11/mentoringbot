@@ -3,6 +3,7 @@ import logging
 
 from aiogram import Bot
 from aiogram.types import BotCommand
+from loguru import logger
 
 from mentoring_bot.apps.bot.handlers.admin.admin_menu import register_admin
 from mentoring_bot.apps.bot.handlers.common import register_common
@@ -11,8 +12,6 @@ from mentoring_bot.config.config import config
 from mentoring_bot.config.logg_settings import init_logging
 from mentoring_bot.db import init_db
 from mentoring_bot.loader import bot, dp, scheduler
-
-import ssl
 
 
 async def set_commands(bot: Bot):
@@ -52,13 +51,16 @@ async def start():
     # Регистрация middleware
 
     # Регистрация фильтров
-
-    await dp.start_polling(bot, skip_updates=True)
+    while True:
+        try:
+            await dp.start_polling(bot, skip_updates=True)
+        except Exception as e:
+            logger.exception(e)
+            await asyncio.sleep(5)
 
 
 def main():
     asyncio.run(start())
-    asyncio.get_event_loop()
 
 
 if __name__ == "__main__":
